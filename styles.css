@@ -1,0 +1,380 @@
+ /* This is for remove default margin,padding and select font and box-sizing */
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+
+
+ }
+
+ /* body formating */
+ body {
+     background: linear-gradient(-135deg, rgb(4, 146, 241), rgb(4, 76, 233));
+     width: 100%;
+     min-height: 100vh;
+
+ }
+
+ /* adding scrollbar to home page  */
+ body::-webkit-scrollbar {
+     width: 14px;
+ }
+
+ body::-webkit-scrollbar-thumb {
+     background-color: grey;
+     border-radius: 16px;
+     --webkit-border-radius: 16px;
+ }
+
+ body::-webkit-scrollbar-track {
+     background-color: lightgrey;
+ }
+
+
+ /* ***********************************************************************Header Section********************************************************************* */
+  /* navbar styling and formating  */
+ header nav {
+     background-color: rgb(25, 154, 240);
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: auto;
+     width: 100%;
+
+ }
+
+
+
+ /* form formating */
+ header nav form {
+     display: flex;
+     justify-content: center;
+ }
+
+ /* webside logo  */
+ .website-logo img {
+     height: 50px;
+     width: 50px;
+ }
+
+
+ /* Website  name */
+
+ .website-name h4 {
+     color: rgb(196, 18, 48);
+ }
+
+ /* Website title and general discription */
+
+ .title-combo>div {
+     vertical-align: middle;
+     display: inline-block;
+ }
+
+ /* search box  formating */
+ form input[type="text"] {
+     width: 100%;
+     flex-grow: 1;
+     margin-right: 5px;
+ }
+
+ /* search button */
+ #search-btn {
+     background-color: orange;
+     color: white;
+     cursor: pointer;
+     transition: background-color 0.3s ease-in-out;
+
+ }
+
+ /* search button  hover*/
+ #search-btn:hover {
+     background-color: rgb(143, 101, 22);
+ }
+
+ /* text box and button style */
+ form input[type="text"],
+ #search-btn {
+     border: none;
+     font-size: 18px;
+     border-radius: 5px;
+     padding: 10px;
+ }
+
+
+
+/* nav bar links  styling and formating */
+ .nav-links {
+     display: flex;
+     justify-content: space-between;
+     width: 200px;
+
+ }
+ 
+ .nav-links li {
+     list-style: none;
+     font-weight: bold;
+     cursor: pointer;
+ }
+
+ .nav-links li :hover {
+     color: rgb(21, 207, 21);
+ }
+
+ .nav-links li a {
+     text-decoration: none;
+     color: black;
+ }
+
+ /******************************************************************** main section******************************************************************* */
+  /* meals container formating */
+ .meals-container {
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-gap: 40px;
+     width: 80%;
+     margin: 10px auto;
+     padding: 20px;
+ }
+
+ /* recipe card  formating and styling */
+ .recipe {
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     color: #000;
+     border-radius: 8px;
+     box-shadow: 0 8px 10px rgba(78, 73, 73, 0.2), -8 -8px 10px rgba(78, 34, 34, 0.5);
+     cursor: pointer;
+     max-width: 350px;
+     transition: transform 0.3s ease-in;
+ }
+ /* recipe card  hover styling */
+ .recipe:hover {
+     transform: scale(1.06);
+ }
+ /* recipe card meal img  */
+ .recipe img {
+     height: 300px;
+ }
+ /* recipe card meal Name   */
+ .recipe h3 {
+     font-size: 24px;
+     margin-block: 5px;
+ }
+ /* recipe card meal description */
+ .recipe p {
+     font-size: 20px;
+     color: rgb(105, 88, 88);
+     margin: 5px 0;
+ }
+/* recipe card meal description word high-light */
+ .recipe span {
+     font-weight: 600;
+ }
+/* recipe card meal button */
+ .recipe button {
+     font-size: 20px;
+     font-weight: 600;
+     padding: 10px;
+     border-radius: 5px;
+     cursor: pointer;
+     border: none;
+     margin: 18px auto;
+     background-color: orange;
+ }
+/* recipe card meal button hover style*/
+ .recipe button:hover {
+     background-color: rgb(143, 101, 22);
+ }
+
+ /****************************************************************** view details page**********************************************************************
+    */
+ /* view meal details formating and styling */
+ .view-details {
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+     background-color: rgb(4, 146, 241);
+     border-radius: 13px;
+     height: 60%;
+     width: 50%;
+     font-size: 20px;
+     overflow-y: scroll;
+     transition: all 5s ease-in-out;
+
+ }
+
+ /* View Meals content formating */
+ .details-content {
+     padding: 30px;
+ }
+
+
+ /* details page Meal Name  */
+ .recipeName {
+     text-align: center;
+     text-transform: uppercase;
+     text-decoration: underline;
+ }
+ /*  details page  Meal ingredient list formating  */
+ .ingredientlist {
+     margin-bottom: 10px;
+     margin-left: 20%;
+     line-height: 30px;
+ }
+ /*  meal details page Recipe Instructions formating */
+ .recipeInstructions p {
+     line-height: 30px;
+     white-space: pre-line;
+ }
+ 
+   /* popup page close buttons styling */
+ .viewDetails-closeBtn,.favPage-closeBtn{
+
+     border: none;
+     font-size: 18px;
+     border-radius: 5px;
+     padding: 5px 8px;
+     background-color: rgb(245, 103, 103);
+     color: #fff;
+     position: absolute;
+     top: 10px;
+     right: 10px; 
+ }
+/* popup page close buttons hover styling */
+ .viewDetails-closeBtn:hover , .favPage-closeBtn:hover {
+     background-color: red;
+ }
+
+ /* adding scrollbar to view details popup */
+ .view-details::-webkit-scrollbar {
+     width: 10px;
+ }
+ 
+ .view-details::-webkit-scrollbar-thumb {
+     background-color: grey;
+     border-radius: 16px;
+     --webkit-border-radius: 16px;
+ } 
+
+ /****************************************************************** favourite page styling***************************************************** */
+  /* favourite meal container popup formating and styling */
+ .fav-meal-container {
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     background-color: rgb(50, 110, 241);
+     height: 75%;
+     width: 60%;
+     padding: 20px;
+     transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+     overflow-y: scroll;
+     /* text-align: center; */
+     transition: all 5s ease-in-out;
+     border-radius: 15px;
+   
+ }
+
+  /* fovourtie Meal card container  */
+ .fav-meal-list {
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-gap: 40px;
+     width: 80%;
+     margin: 10px auto;
+     padding: 20px;
+ }
+ /* favourite meal card  */
+ .FavMealCard{
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     color: #000;
+     border-radius: 8px;
+     box-shadow: 0 8px 10px rgba(78, 73, 73, 0.2), -8 -8px 10px rgba(78, 34, 34, 0.5);
+     cursor: pointer;
+     max-width: 350px;
+     transition: transform 0.3s ease-in;
+ }
+  /* favourite meal card hover */
+ .FavMealCard:hover {
+     transform: scale(1.06);
+ }
+  /* favourite meal card img */
+ .FavMealCard img {
+     height: 200px;
+ }
+  /* favourite meal card   meal name  */
+.FavMealCard h3 {
+     font-size: 20px;
+     margin-block: 5px;
+ }
+   /* favourite meal card  description  */
+ .FavMealCard p {
+     font-size: 16px;
+     color: rgb(105, 88, 88);
+     margin: 5px 0;
+ }
+    /* favourite meal card  description word high-light  */
+ .FavMealCard span {
+     font-weight: 600;
+ }
+ /* favourite meal card remove card button  */
+ .FavMealCard button {
+     font-size: 20px;
+     font-weight: 600;
+     padding: 10px;
+     border-radius: 5px;
+     cursor: pointer;
+     border: none;
+     margin: 18px auto;
+     background-color: orange;
+ }
+ /* favourite meal card remove card button  hover*/
+  .FavMealCard button:hover {
+     background-color: rgb(143, 101, 22);
+ }
+
+ /* adding scrollbar to Favourite page popup */
+
+ .fav-meal-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.fav-meal-container::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 16px;
+    --webkit-border-radius: 16px;
+} 
+
+
+ /* Responsive code */
+ @media screen and (max-width:600px) {
+     header nav {
+         flex-direction: column;
+
+     }
+
+     nav form {
+         width: 80%;
+         margin-top: 20px;
+     }
+
+     .nav-links {
+         margin-top: 20px;
+     }
+     .view-details,.fav-meal-container{
+        width: 100vw;
+     }
+
+ }

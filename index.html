@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/0ba4f5c443.js" crossorigin="anonymous"></script>
+    <title>Gursimran Food World</title>
+</head>
+
+<!-- body -->
+
+<body>
+
+    <header>
+        <!-- nav bar -->
+        <nav>
+            <!-- This Div contains the logo and titles of page -->
+            <div class="title-combo">
+                <div class="website-logo">
+                    <img src="static/food-logo.png" alt="logo">
+                </div>
+                <div class="website-name">
+                    <h4>Gursimran</h4>
+                    <h6>Food World</h6>
+                </div>
+            </div>
+            <!-- This form contain  the input box and search button -->
+            <form>
+                <input type="text" class="search-box" placeholder="Search your meal.....">
+                <button id="search-btn"
+                    title="Search">Search</button>
+            </form>
+            <!-- This div contain  link  like home and favourite meal -->
+            <div class="nav-links">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <h4 class="favoMeal"> Favourite meals</h4>
+                </li>
+            </div>
+        </nav>
+    </header>
+    <!--  main  -->
+    <main>
+        <section>
+            <!-- This Div contains  search meals and heaing  -->
+            <div class="meals-container">
+                <h2>Search your favourite meals</h2>
+            </div>
+            <!-- This Div contains meal details -->
+            <div class="view-details">
+                <button type="button" class="viewDetails-closeBtn"><i class="fas fa-times"></i></button>
+                <!-- This Div contain Meal content  -->
+                <div class="details-content">
+                </div>
+            </div>
+
+            <div class="fav-meal-container">
+                <button type="button" class="favPage-closeBtn" onclick="favPageClose()"><i class="fas fa-times"></i></button>
+                <div class="fav-meal-list">
+                    
+                </div>
+            </div> 
+    
+         </section>
+         
+
+        
+    </main>
+    <!-- Link main JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
