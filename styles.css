@@ -102,31 +102,17 @@
      border-radius: 5px;
      padding: 10px;
  }
-
-
-
-/* nav bar links  styling and formating */
- .nav-links {
-     display: flex;
-     justify-content: space-between;
-     width: 200px;
-
- }
  
- .nav-links li {
-     list-style: none;
-     font-weight: bold;
+ /* nav bar link  styling */
+ .nav-link{
      cursor: pointer;
  }
 
- .nav-links li :hover {
+ .nav-link:hover {
      color: rgb(21, 207, 21);
  }
 
- .nav-links li a {
-     text-decoration: none;
-     color: black;
- }
+ 
 
  /******************************************************************** main section******************************************************************* */
   /* meals container formating */

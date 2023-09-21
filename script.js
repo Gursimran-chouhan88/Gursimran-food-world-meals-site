@@ -91,7 +91,7 @@ const searchBtn = document.getElementById('search-btn');
 const viewDetails = document.querySelector('.view-details');
 const detailsContent = document.querySelector('.details-content');
 const viewDetailCloseBtn = document.querySelector('.viewDetails-closeBtn');
-const favHeading = document.querySelector('.favoMeal');
+const favHeading = document.querySelector('.favoMealHeading');
 const favMealContainer = document.querySelector('.fav-meal-container');
 const favMealList = document.querySelector('.fav-meal-list');
 const favPagecloseBtn = document.querySelector('favPage-closeBtn');
@@ -180,7 +180,7 @@ const openDetailsPop = (meal) => {
 
   detailsContent.parentElement.style.display = "block";
 };
-
+// adding addEventListener for view details meal page
 viewDetailCloseBtn.addEventListener('click', (e) => {
   detailsContent.parentElement.style.display = "none";
 });
