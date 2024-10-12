@@ -122,8 +122,6 @@ form input[type="text"],
   flex-direction: column;
   color: #000;
   border-radius: 8px;
-  box-shadow: 0 8px 10px rgba(78, 73, 73, 0.2),
-    -8 -8px 10px rgba(78, 34, 34, 0.5);
   cursor: pointer;
   max-width: 350px;
   transition: transform 0.3s ease-in;
@@ -131,6 +129,7 @@ form input[type="text"],
 /* recipe card  hover styling */
 .recipe:hover {
   transform: scale(1.06);
+  box-shadow: 0px 0px 8px 8px rgba(78, 73, 73, 0.3);
 }
 /* recipe card meal img  */
 .recipe img {
@@ -184,6 +183,7 @@ form input[type="text"],
   font-size: 20px;
   overflow-y: scroll;
   transition: all 5s ease-in-out;
+  box-shadow: 0px 0px 12px 21px rgba(78, 73, 73, 0.6);
 }
 
 /* View Meals content formating */
@@ -218,9 +218,9 @@ form input[type="text"],
   padding: 5px 8px;
   background-color: rgb(245, 103, 103);
   color: #fff;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  position: sticky;
+  top: 12px;
+  left: 95%;
 }
 /* popup page close buttons hover styling */
 .viewDetails-closeBtn:hover,
@@ -256,6 +256,7 @@ form input[type="text"],
   /* text-align: center; */
   transition: all 5s ease-in-out;
   border-radius: 15px;
+  box-shadow: 0px 0px 12px 21px rgba(78, 73, 73, 0.6);
 }
 
 /* fovourtie Meal card container  */
@@ -275,8 +276,7 @@ form input[type="text"],
   flex-direction: column;
   color: #000;
   border-radius: 8px;
-  box-shadow: 0 8px 10px rgba(78, 73, 73, 0.2),
-    -8 -8px 10px rgba(78, 34, 34, 0.5);
+
   cursor: pointer;
   max-width: 350px;
   transition: transform 0.3s ease-in;
@@ -284,6 +284,7 @@ form input[type="text"],
 /* favourite meal card hover */
 .FavMealCard:hover {
   transform: scale(1.06);
+  box-shadow: 0px 0px 8px 8px rgba(78, 73, 73, 0.3);
 }
 /* favourite meal card img */
 .FavMealCard img {
@@ -350,9 +351,10 @@ form input[type="text"],
     width: 90vw;
   }
   .fav-meal-container {
-    width: 100vw;
+    width: 90vw;
   }
-  .meals-container {
+  .meals-container,
+  .fav-meal-list {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 0;
   }
