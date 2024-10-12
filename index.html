@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="find your desire meal recipe and ingredients">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Gursimran chouhan">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="find your desire meal recipe and ingredients"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Gursimran chouhan" />
 
     <!-- Link main Css file -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- Link fontawesome -->
-    <script src="https://kit.fontawesome.com/0ba4f5c443.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0ba4f5c443.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Gursimran Food World</title>
-</head>
+  </head>
 
-<!-- body -->
+  <!-- body -->
 
-<body>
-
+  <body>
     <header>
-        <!-- nav bar -->
-        <nav>
-            <!-- This Div contains the logo and titles of page -->
-            <div class="title-combo">
-                <div class="website-logo">
-                    <img src="static/food-logo.png" alt="logo">
-                </div>
-                <div class="website-name">
-                    <h4>Gursimran</h4>
-                    <h6>Food World</h6>
-                </div>
-            </div>
-            <!-- This form contain  the input box and search button -->
-            <form>
-                <input type="text" class="search-box" placeholder="Search your meal.....">
-                <button id="search-btn" title="Search">Search</button>
-            </form>
-            <!-- This div contain  link favourite meal -->
-            <div class="nav-link">
-                    <h3 class="favoMealHeading">My Favourite meals</h3>
-            </div>
-        </nav>
+      <!-- nav bar -->
+      <nav>
+        <!-- This Div contains the logo and titles of page -->
+        <div class="title-combo">
+          <div class="website-logo">
+            <img src="static/food-logo.png" alt="logo" />
+          </div>
+          <div class="website-name">
+            <h4>Gursimran</h4>
+            <h6>Food World</h6>
+          </div>
+        </div>
+        <!-- This form contain  the input box and search button -->
+        <form>
+          <input
+            type="text"
+            class="search-box"
+            placeholder="Search your meal....."
+          />
+          <button id="search-btn" title="Search">Search</button>
+        </form>
+        <!-- This div contain  link favourite meal -->
+        <div class="nav-link">
+          <h3 class="favoMealHeading">
+            <i class="fa-solid fa-heart"></i> My Favourite meals
+          </h3>
+        </div>
+      </nav>
     </header>
     <!--  main  -->
     <main>
-        <section>
-            <!-- This Div contains  search meals and heaing  -->
-            <div class="meals-container">
-                <h2>Search your favourite meals</h2>
-            </div>
-            <!-- This Div contains meal details -->
-            <div class="view-details">
-                <button type="button" class="viewDetails-closeBtn"><i class="fas fa-times"></i></button>
-                <!-- This Div contain Meal content  -->
-                <div class="details-content">
-                </div>
-            </div>
-             <!-- This Div contain favourite Meal page  -->
-            <div class="fav-meal-container">
-                <button type="button" class="favPage-closeBtn" onclick="favPageClose()"><i
-                        class="fas fa-times"></i></button>
-                  <!-- This Div contain favourite Meal list  -->
-                <div class="fav-meal-list">
-                </div>
-            </div>
-
-        </section>
-
-
-
+      <section>
+        <!-- This Div contains  search meals and heaing  -->
+        <div class="meals-container">
+          <h2>Search your favourite meals</h2>
+        </div>
+        <!-- This Div contains meal details -->
+        <div class="view-details">
+          <button type="button" class="viewDetails-closeBtn">
+            <i class="fas fa-times"></i>
+          </button>
+          <!-- This Div contain Meal content  -->
+          <div class="details-content"></div>
+        </div>
+        <!-- This Div contain favourite Meal page  -->
+        <div class="fav-meal-container">
+          <button
+            type="button"
+            class="favPage-closeBtn"
+            onclick="favPageClose()"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <!-- This Div contain favourite Meal list  -->
+          <div class="fav-meal-list"></div>
+        </div>
+      </section>
     </main>
     <!-- Link main JavaScript file -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
