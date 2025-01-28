@@ -65,6 +65,10 @@ header nav form {
   display: inline-block;
 }
 
+.title-combo > div:hover {
+  cursor: pointer;
+}
+
 /* search box  formating */
 form input[type="text"] {
   width: 100%;
