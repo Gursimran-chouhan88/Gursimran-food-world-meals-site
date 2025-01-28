@@ -30,6 +30,11 @@ body::-webkit-scrollbar-track {
 
 /* ***********************************************************************Header Section********************************************************************* */
 /* navbar styling and formating  */
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header nav {
   background-color: rgb(25, 154, 240);
   padding: 20px;
@@ -60,7 +65,7 @@ header nav form {
 
 /* Website title and general discription */
 
-.title-combo > div {
+.title-combo a > div {
   vertical-align: middle;
   display: inline-block;
 }
@@ -100,11 +105,24 @@ form input[type="text"],
 
 /* nav bar link  styling */
 .nav-link {
+  width: 275px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-link:hover {
-  color: rgb(21, 207, 21);
+.favoMealHeading {
+  color: white;
+  font-size: 20px;
+}
+
+.favoMealHeading:hover {
+  color: rgb(0, 0, 0);
+}
+
+.homeHeading:hover {
+  color: rgb(0, 0, 0);
 }
 
 /******************************************************************** main section******************************************************************* */
